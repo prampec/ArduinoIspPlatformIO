@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": false,
+    "editor.trimAutoWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.trimTrailingWhitespace": false,
+    "files.trimFinalNewlines": false,
+}

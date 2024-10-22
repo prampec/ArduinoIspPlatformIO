@@ -43,6 +43,7 @@
 // - The SPI functions herein were developed for the AVR910_ARD programmer 
 // - More information at http://code.google.com/p/mega-isp
 
+#include <Arduino.h>
 #include "SPI.h"
 #include "pins_arduino.h"
 #define RESET     SS
@@ -65,6 +66,9 @@
 #define CRC_EOP     0x20 //ok it is a space...
 
 void pulse(int pin, int times);
+int avrisp();
+uint8_t write_flash_pages(int length);
+uint8_t write_eeprom_chunk(int start, int length);
 
 void setup() {
   Serial.begin(9600);
